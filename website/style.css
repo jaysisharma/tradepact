@@ -1,0 +1,361 @@
+:root {
+    --bg-color: #000000;
+    --text-primary: #ffffff;
+    --text-secondary: #888888;
+    --accent-color: #C9A84C;
+    --border-color: #1a1a1a;
+    --surface-color: #0a0a0a;
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --transition: all 0.2s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* --- Navbar --- */
+nav {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.logo img {
+    height: 24px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--text-primary);
+}
+
+.nav-cta {
+    text-decoration: none;
+    color: var(--bg-color);
+    background: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav-cta:hover {
+    background: #e5e5e5;
+}
+
+/* --- Hero --- */
+.hero {
+    padding: 8rem 0;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    color: var(--text-secondary);
+    font-size: 1.15rem;
+    margin-bottom: 2.5rem;
+    max-width: 480px;
+}
+
+.cta-button {
+    text-decoration: none;
+    color: var(--bg-color);
+    background: var(--accent-color);
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.cta-button:hover {
+    filter: brightness(1.1);
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* --- Features --- */
+.section {
+    padding: 6rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.section-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent-color);
+    margin-bottom: 3rem;
+    font-family: var(--font-mono);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.feature-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.feature-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* --- AI Section --- */
+.ai-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.ai-block h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.ai-block p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.ai-preview {
+    background: var(--surface-color);
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.ai-preview span {
+    color: var(--accent-color);
+}
+
+/* --- Legal/Policy Pages --- */
+.policy-header {
+    margin-bottom: 4rem;
+}
+
+.policy-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.policy-meta {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-family: var(--font-mono);
+}
+
+.summary-box {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 4rem;
+}
+
+.summary-box h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.summary-box p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.policy-content {
+    max-width: 750px;
+}
+
+.policy-section {
+    margin-bottom: 4rem;
+}
+
+.policy-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.policy-section p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+}
+
+.legal-list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.legal-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.legal-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-family: var(--font-mono);
+}
+
+/* --- Footer --- */
+footer {
+    padding: 4rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-brand p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 1rem;
+    max-width: 200px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 4rem;
+}
+
+.footer-group h4 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.footer-group ul {
+    list-style: none;
+}
+
+.footer-group li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-group a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    transition: var(--transition);
+}
+
+.footer-group a:hover {
+    color: var(--text-primary);
+}
+
+.footer-bottom {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+    .hero, .features-grid, .ai-block, .footer-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .hero {
+        text-align: center;
+        padding: 4rem 0;
+    }
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-nav {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

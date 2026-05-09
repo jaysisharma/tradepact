@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "125024595843",
+    "project_id": "tradepact-bcb22",
+    "storage_bucket": "tradepact-bcb22.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125024595843:android:33ac1e254cdb85b73810b6",
+        "android_client_info": {
+          "package_name": "com.example.tradepact"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125024595843-oqn43std6pujd68876hsetf2budkoasg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tradepact",
+            "certificate_hash": "af35f118c8e94904d5c1758dd7b72bda5f54e6b3"
+          }
+        },
+        {
+          "client_id": "125024595843-nk9idf7ln8ft8t0eqqb8okk37e7jm6pc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnnck_mKydW7YNLqq4oCJTdBMnwRI3KHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125024595843-nk9idf7ln8ft8t0eqqb8okk37e7jm6pc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "125024595843-tlks6l14qmb01oli7ct277mocc5nku9p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tradepact"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125024595843:android:032b46e9d41018be3810b6",
+        "android_client_info": {
+          "package_name": "com.jaysisharma.tradepact"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125024595843-nk9idf7ln8ft8t0eqqb8okk37e7jm6pc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnnck_mKydW7YNLqq4oCJTdBMnwRI3KHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125024595843-nk9idf7ln8ft8t0eqqb8okk37e7jm6pc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "125024595843-tlks6l14qmb01oli7ct277mocc5nku9p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tradepact"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
